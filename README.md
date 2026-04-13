@@ -73,15 +73,17 @@ Steps taken to prepare the dataset for analysis:
 
 ---
 
-## Visualizations
+## Visualizations  Need to make changes
 
 All charts follow a clean, minimal style — no clutter, clear labels, readable scales.
 
 ### 1. Average Housing Price by Region
 > Bar chart comparing mean prices across Ontario regions. Shows clear variation — some areas are significantly more expensive than others, even outside the GTA.
+![Average House Price](images/AVG-House%20Price.png)
 
 ### 2. Price Trend Over Time
 > Line chart tracking how median prices have changed year over year. Highlights the acceleration in recent years.
+
 
 ### 3. Price Distribution by Property Type
 > Box plot showing how prices spread within each property type. Useful for spotting where the most variability lives.
@@ -143,6 +145,43 @@ As someone who has built structures in this market, translating that experience 
 
 ---
 
+## Dependencies
+
+-pandas
+-numpy
+-matplotlib
+-seaborn
+-jupyter
+
+---
+
+## Project Structure
+
+ontario-housing-analysis/
+│
+├── data/                  # Raw and cleaned datasets
+├── notebooks/             # Jupyter notebook(s)
+├── visuals/               # Exported chart images
+├── requirements.txt       # Python dependencies
+└── README.md              # This file
+
+---
+
+Connect With Me
+LinkedIn: [Your LinkedIn Profile] <!-- UPDATE -->
+
+Kaggle: [Your Kaggle Profile] <!-- UPDATE -->
+
+GitHub: [Your GitHub Profile] <!-- UPDATE -->
+
+---
+
+Built with Python, Pandas, Matplotlib, and Seaborn.
+Google Data Analytics Professional Certificate — Capstone Project.
+
+
+---
+
 ## How to Run This Notebook
 
 ### Requirements
@@ -153,6 +192,9 @@ As someone who has built structures in this market, translating that experience 
 ### Setup
 
 ```bash
+
+
+
 # Clone the repository
 git clone https://github.com/YOUR_USERNAME/ontario-housing-analysis.git
 cd ontario-housing-analysis
@@ -168,7 +210,7 @@ jupyter notebook
 
 Here are some key visualizations from the analysis:
 
-![Average House Price](images/AVG-House%20Price.png)
+
 
 ![Bathroom vs Price](images/Bathroom%20vs%20price.png)
 
