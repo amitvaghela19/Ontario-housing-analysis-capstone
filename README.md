@@ -95,14 +95,15 @@ This project shows that Ontario’s housing market is not one smooth curve — i
 
 ```text
 ontario-housing-market-analysis/
-├── ontario-housing-market-analysis-capstone.ipynb
+├── notebooks/ ontario-housing-market-analysis-capstone.ipynb
 ├── README.md
 ├── project-walkthrough.md
 ├── images/
-│   ├── AVG-House-Price-6.jpg
-│   ├── Bedroom-vs-Price-4.jpg
-│   ├── Bathroom-vs-price-3.jpg
-│   └── Median-Family-Income-vs-Price-5.jpg
+│   ├── AVG-House-Price.png
+│   ├── Bedroom-vs-Price.jpg
+│   ├── Bathroom-vs-price.jpg
+|   ├── Corelation-Heatmap-Ontario-Housing.png
+│   └── Median-Family-Income-vs-Price.jpg
 └── data/
 ```
 
@@ -111,7 +112,7 @@ ontario-housing-market-analysis/
 ## ⚙️ How to Run
 
 ```bash
-git clone <your-repo-url>
+git clone <https://github.com/amitvaghela19/Ontario-housing-analysis-capstone>
 cd ontario-housing-market-analysis
 pip install pandas numpy matplotlib seaborn jupyter
 jupyter notebook
