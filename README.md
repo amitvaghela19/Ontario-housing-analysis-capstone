@@ -97,6 +97,7 @@ This project shows that Ontario’s housing market is not one smooth curve — i
 ontario-housing-market-analysis/
 ├── notebooks/ ontario-housing-market-analysis-capstone.ipynb
 ├── README.md
+├── LICENSE
 ├── project-walkthrough.md
 ├── images/
 │   ├── AVG-House-Price.png
