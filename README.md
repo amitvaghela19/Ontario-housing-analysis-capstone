@@ -102,7 +102,7 @@ ontario-housing-market-analysis/
 │   ├── AVG-House-Price.png
 │   ├── Bedroom-vs-Price.jpg
 │   ├── Bathroom-vs-price.jpg
-|   ├── Corelation-Heatmap-Ontario-Housing.png
+|   ├── Correlation-Heatmap-Ontario-Housing.png
 │   └── Median-Family-Income-vs-Price.jpg
 └── data/
 ```
