@@ -1,219 +1,136 @@
-# 🏠 Ontario Housing Market Analysis
+# 🏡 Ontario Housing Market Analysis
 
-A data-driven exploration of housing prices across Ontario, Canada — examining regional trends, affordability patterns, and what drives property values beyond the Greater Toronto Area.
+<p align="center">
+  <strong>A story-driven data analysis of housing prices across Ontario cities</strong><br>
+  <em>Built with Python, Pandas, Matplotlib, and Seaborn</em>
+</p>
 
----
+***
 
-## About Me
+## ✨ Project Snapshot
 
-I hold a Bachelor's degree in Civil Engineering and two Post-Graduate Diplomas — one in Construction Project Management and one in Supply Chain Management. My career so far spans two very different worlds: three years managing retail stores and gas stations, and three years working in Ontario's construction industry.
+This project explores how housing prices change across Ontario and what factors seem to shape those differences the most. Instead of looking at the housing market as one single story, this analysis breaks it down city by city to uncover pricing patterns, affordability pressure, and the relationship between home features and price.
 
-That combination taught me how to read both spreadsheets and blueprints. On job sites, I watched housing costs shift in real time. In retail and fuel operations, I learned how to track inventory, spot trends, and make decisions based on numbers — not guesses. Both experiences pointed me toward the same realization: data tells better stories than assumptions.
+It started with a simple question: **is Ontario housing really one market, or are we missing the full picture when everything gets averaged together?**
 
-This project is my capstone as I transition into data analytics. It brings together everything I have learned — from managing real-world operations to the analytical skills I developed through the Google Data Analytics Professional Certificate and self-directed Python learning. I built this project to show that my background is not a detour — it is a foundation.
+***
 
-This project analyzes the housing market in Ontario using data from the top 45 cities.
----
+## 🌍 Why This Project Matters
 
-## Dataset
+Housing is one of the most talked-about issues in Ontario, but numbers often get thrown around without enough context. A price that seems “normal” in one city can feel completely out of reach in another.
 
-<!-- UPDATE: Replace with your actual dataset source and link -->
+This project looks beyond headlines and brings the data into focus through clear visual analysis. The goal is to make the market easier to understand for anyone curious about how prices, income, and home features connect.
 
-- **Source:** [Ontario housing dataset — e.g., Kaggle / CREA / Ontario Open Data]
-- **Format:** CSV
-- **Records:** <!-- UPDATE: e.g., ~X,XXX rows -->
-- **Coverage:** Regions across Ontario (not limited to Toronto/GTA)
-- **Key fields:** location, property type, price, year, bedrooms, square footage, and more
+***
 
----
+## 🎯 Questions Explored
 
-## Project Goals
+- Which Ontario cities have the highest and lowest average home prices?
+- How do bedrooms and bathrooms influence housing prices?
+- Does median family income help explain price differences across cities?
+- Which cities appear more stretched when price is compared to income?
 
-1. Understand how housing prices vary across Ontario's diverse regions
-2. Identify the factors that have the strongest relationship with price
-3. Assess affordability trends over time
-4. Present findings in a clean, visual format that anyone can follow
+***
 
----
+## 🧰 Tools Used
 
-## Key Questions
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Jupyter Notebook
 
-- How do housing prices differ between Ontario regions?
-- Which property features correlate most strongly with price?
-- Has housing become less affordable over time, and where is it worst?
-- Are there regional patterns that simple averages would miss?
+***
 
----
+## 📂 Dataset Overview
 
-## Methodology
+The notebook uses a housing listings dataset focused on major Canadian cities, with Ontario cities selected for analysis. The project works with fields such as:
 
-| Phase | Description |
-|-------|-------------|
-| **Ask** | Defined questions around regional pricing, affordability, and price drivers |
-| **Prepare** | Sourced and reviewed the dataset for completeness and relevance |
-| **Process** | Cleaned, transformed, and validated the data using Python and Pandas |
-| **Analyze** | Explored distributions, trends, correlations, and regional comparisons |
-| **Share** | Built clear visualizations using Matplotlib and Seaborn |
-| **Act** | Summarized findings and actionable insights |
+- City
+- Price
+- Number of bedrooms
+- Number of bathrooms
+- Median family income
+- Population
+- Latitude and longitude
 
----
+***
 
-## Data Cleaning
+## 🔍 What This Project Covers
 
-Steps taken to prepare the dataset for analysis:
+### 1. Average Price by City
+A city-level view of average home prices across Ontario. This helps show how dramatically prices can change from one market to another.
 
-- Removed duplicate records
-- Handled missing values (dropped or imputed based on column context)
-- Standardized region and property-type names for consistency
-- Converted data types (dates, numeric fields) where needed
-- Filtered out extreme outliers that would distort visualizations
-- Created new calculated columns (e.g., price per square foot, affordability ratios)
+### 2. Bedrooms vs Price
+A look at how the number of bedrooms connects with median listing price.
 
-<!-- UPDATE: Add or remove bullet points to match your actual cleaning steps -->
+### 3. Bathrooms vs Price
+A similar comparison for bathrooms, helping show how additional features often line up with higher prices.
 
----
+### 4. Income vs Price
+A scatter plot comparing median family income with listing prices to better understand affordability and local market pressure.
 
-## Visualizations  Need to make changes
+### 5. Affordability Ratio
+A simple but useful metric created by comparing home price to median family income, helping show where housing may feel especially stretched.
 
-All charts follow a clean, minimal style — no clutter, clear labels, readable scales.
+***
 
-### 1. Average Housing Price by Region
-> Bar chart comparing mean prices across Ontario regions. Shows clear variation — some areas are significantly more expensive than others, even outside the GTA.
-![Average House Price](images/AVG-House%20Price.png)
+## 📈 Highlights
 
-### 2. Price Trend Over Time
-> Line chart tracking how median prices have changed year over year. Highlights the acceleration in recent years.
+- Some Ontario cities sit far above the rest in average housing price, showing that the market is highly uneven.
+- Cities with similar income levels can still have very different housing prices.
+- More bedrooms and bathrooms usually align with higher prices, but extreme categories likely represent premium or unusual listings.
+- Affordability becomes much more meaningful when price is viewed alongside income instead of by itself.
 
+***
 
-### 3. Price Distribution by Property Type
-> Box plot showing how prices spread within each property type. Useful for spotting where the most variability lives.
+## 💡 Key Takeaway
 
-### 4. Correlation Heatmap
-> Heatmap of numeric features vs. price. Quickly identifies which variables have the strongest linear relationship with housing cost.
+This project shows that Ontario’s housing market is not one smooth curve — it is a mix of very different local realities. Looking at price alone tells part of the story, but combining price, home features, and income creates a much richer view of what is happening across the province.
 
-### 5. Affordability Index Over Time
-> Line or area chart showing how affordability has shifted. Connects price growth to income benchmarks where available.
+***
 
-<!-- UPDATE: Add, remove, or rename these to match your actual charts -->
+## 🗂️ Project Structure
 
----
-
-## Key Insights
-
-<!-- UPDATE: Replace these with your actual findings and numbers -->
-
-- **Regional gaps are significant.** Prices in some Ontario regions are several times higher than others, even after removing GTA data.
-- **Property size matters — but not equally everywhere.** Square footage correlates with price, but the strength of that relationship varies by region.
-- **Recent years show acceleration.** Price growth has not been steady — the sharpest increases are concentrated in the most recent years of the dataset.
-- **Detached homes dominate the high end.** But condos and townhouses show tighter, more predictable pricing.
-
----
-
-## Affordability Analysis
-
-<!-- UPDATE: Plug in your specific affordability findings -->
-
-- Compared median housing prices against regional or provincial income benchmarks
-- Calculated price-to-income ratios to measure affordability across regions
-- Found that affordability has worsened in most regions over time, with some areas crossing into critical territory
-- Smaller cities that were once considered affordable are trending toward GTA-level ratios
-
----
-
-## Correlation Findings
-
-<!-- UPDATE: Add your actual correlation values -->
-
-| Feature | Correlation with Price |
-|---------|----------------------|
-| Square footage | <!-- e.g., 0.72 --> |
-| Number of bedrooms | <!-- e.g., 0.58 --> |
-| Year built | <!-- e.g., 0.15 --> |
-| Lot size | <!-- e.g., 0.45 --> |
-
-- Strongest positive correlator: <!-- UPDATE -->
-- Weakest or negligible: <!-- UPDATE -->
-- No single feature explains price alone — location and property type add important context
-
----
-
-## Summary
-
-This project shows that Ontario's housing market is not one story — it is many. Prices, affordability, and the features that drive value all shift depending on where you look. The data confirms what many suspect: housing is becoming less affordable across the province, not just in Toronto.
-
-As someone who has built structures in this market, translating that experience into data analysis felt natural. This project represents my first full end-to-end analysis — from raw data to clean visuals to actionable findings.
-
----
-
-## Dependencies
-
--pandas
--numpy
--matplotlib
--seaborn
--jupyter
-
----
-
-## Project Structure
-
-ontario-housing-analysis/
-│
-├── data/                  # Raw and cleaned datasets
-├── notebooks/             # Jupyter notebook(s)
-├── visuals/               # Exported chart images
-├── requirements.txt       # Python dependencies
-└── README.md              # This file
-
----
-
-Connect With Me
-LinkedIn: [Your LinkedIn Profile] <!-- UPDATE -->
-
-Kaggle: [Your Kaggle Profile] <!-- UPDATE -->
-
-GitHub: [Your GitHub Profile] <!-- UPDATE -->
-
----
-
-Built with Python, Pandas, Matplotlib, and Seaborn.
-Google Data Analytics Professional Certificate — Capstone Project.
-
-
----
-
-## How to Run This Notebook
-
-### Requirements
-
-- Python 3.8+
-- Jupyter Notebook or JupyterLab
-
-### Setup
+```text
+ontario-housing-market-analysis/
+├── ontario-housing-market-analysis-capstone.ipynb
+├── README.md
+├── project-walkthrough.md
+├── images/
+│   ├── AVG-House-Price-6.jpg
+│   ├── Bedroom-vs-Price-4.jpg
+│   ├── Bathroom-vs-price-3.jpg
+│   └── Median-Family-Income-vs-Price-5.jpg
+└── data/
+```
+
+***
+
+## ⚙️ How to Run
 
 ```bash
-
-
-
-# Clone the repository
-git clone https://github.com/YOUR_USERNAME/ontario-housing-analysis.git
-cd ontario-housing-analysis
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Launch the notebook
+git clone <your-repo-url>
+cd ontario-housing-market-analysis
+pip install pandas numpy matplotlib seaborn jupyter
 jupyter notebook
+```
 
+Then open the notebook and run the cells in order.
 
-## Analysis Visualizations
+***
 
-Here are some key visualizations from the analysis:
+## 🌟 What Makes This Project Stand Out
 
+- Uses real housing listing data instead of sample data
+- Focuses on a topic people already care deeply about
+- Mixes visual storytelling with practical analysis
+- Moves from raw data to observations that feel relevant and easy to follow
+- Connects numbers with real-world questions around affordability and market differences
 
+***
 
-![Bathroom vs Price](images/Bathroom%20vs%20price.png)
+## 👋 Final Note
 
-![Bedroom vs Price](images/Bedroom%20vs%20Price.png)
-
-![Median Family Income vs Price](images/Median%20Family%20Income%20vs%20Price.png)
+This project means a lot because it brings together curiosity, storytelling, and data analysis in one place. It is a strong example of how a simple question can turn into a meaningful project when the data is explored with care.
